@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: GPL-3.0
+
 pragma solidity >=0.7.0 <0.9.0;
 
 /**
@@ -52,15 +54,15 @@ contract GraffitiWall {
       * @dev function args are separated on purpose, because we can not store
       * different types in same array. This is not possible: [int8, int32]
       */
-    function paint(uint256[2][] calldata _coords, uint8[3][] calldata _rgbColor) public {
+    function paint(uint256[2][] calldata _coords, uint8[3][] calldata _rgbColors) public {
         for (uint256 i = 0; i < _coords.length; i++) {
             wall.push(
                 Pixel(
                     _coords[i][0],
                     _coords[i][1],
-                    _rgbColor[i][0],
-                    _rgbColor[i][1],
-                    _rgbColor[i][2]
+                    _rgbColors[i][0],
+                    _rgbColors[i][1],
+                    _rgbColors[i][2]
                 )
             );
         }
