@@ -1,0 +1,99 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "uint256[2][]",
+				"name": "_coords",
+				"type": "uint256[2][]"
+			},
+			{
+				"internalType": "uint8[3][]",
+				"name": "_rgbColor",
+				"type": "uint8[3][]"
+			}
+		],
+		"name": "paint",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "pixels",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "x",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "y",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint8",
+				"name": "r",
+				"type": "uint8"
+			},
+			{
+				"internalType": "uint8",
+				"name": "g",
+				"type": "uint8"
+			},
+			{
+				"internalType": "uint8",
+				"name": "b",
+				"type": "uint8"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "show",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "x",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "y",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint8",
+						"name": "r",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "g",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "b",
+						"type": "uint8"
+					}
+				],
+				"internalType": "struct GraffitiWall.Pixel[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
