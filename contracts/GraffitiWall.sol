@@ -50,7 +50,7 @@ contract GraffitiWall {
     /**
       * @notice push pixels to the wall. Can push multiple pixels in a single call.
       * @param _coords array of arrays with x, y coords [[x, y], ..., [x, y]]
-      * @param _rgbColor array of arrays with rgb values [[r, g, b], ..., [r, g, b]]
+      * @param _rgbColors array of arrays with rgb values [[r, g, b], ..., [r, g, b]]
       * @dev function args are separated on purpose, because we can not store
       * different types in same array. This is not possible: [int8, int32]
       */
